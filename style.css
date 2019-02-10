@@ -1,18 +1,33 @@
-.container {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont;
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 1.2;
+html {
+  color: rgb(253, 253, 253);
+  background-color: #0D0E10;
+}
 
-  background: #fefefe;
-  color: #000207;
+body {
+  font-family: "Inter UI";
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.4;
+
   max-width: 600px;
-  margin: 1rem;
   margin: auto;
 }
 
+p {
+  text-indent: 1.5rem;
+  color: #a9acc5;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+a {
+  color: #C799F5;
+}
+
 a:visited { 
-  color: #000207;
+  color: #C799F5;
 }
 
 ol {

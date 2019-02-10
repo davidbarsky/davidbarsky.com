@@ -1,27 +1,21 @@
-import '../style.css'
+import "../style.css";
+import * as React from "react";
+import Layout from "../components/layout";
+import Links from "../components/links";
 
-export default () =>
-  <div className="container">
-    <h2>Hi, I’m David Barsky.</h2>
-    <p>I am engineer in Alexa AI organization at Amazon, where I work on test infrastructure for natural language models.
-    </p>
-    <p>
-      I graduated from Brandeis University, where I studied
-      computer science and history.
+function App() {
+  return (
+    <Layout title="David Barsky">
+      <h2>Hi, I’m David Barsky.</h2>
+      <p>
+        I'm currently at Amazon, where I work on test infrastructure for natural language models. I also work on <a href="https://github.com/awslabs/aws-lambda-rust-runtime">Rust Runtime for AWS Lambda</a> and contribute to the <a href="https://tokio.rs/">Tokio</a> project.
       </p>
-    <p>
-      You can find me elsewhere on:
+      <p>
+        I graduated from Brandeis University, where I studied computer science and history.
       </p>
-    <ol>
-      <a href="https://twitter.com/thramp">Twitter</a>
-    </ol>
-    <ol>
-      <a href="https://instagram.com/thramp">Instagram</a>
-    </ol>
-    <ol>
-      <a href="https://github.com/davidbarsky">GitHub</a>
-    </ol>
-    <ol>
-      <a href="https://linkedin.com/in/davidbarsky">LinkedIn</a>
-    </ol>
-  </div>
+      <Links />
+    </Layout>
+  );
+}
+
+export default App;

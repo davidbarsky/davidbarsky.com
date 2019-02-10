@@ -1,10 +1,15 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 html {
   color: rgb(253, 253, 253);
   background-color: #0D0E10;
 }
 
 body {
-  font-family: "Inter UI";
   font-weight: 300;
   font-size: 1.3rem;
   line-height: 1.4;
@@ -19,7 +24,8 @@ p {
 }
 
 h2 {
-  font-weight: 500;
+  font-weight: 700;
+  font-style: italic;
 }
 
 a {

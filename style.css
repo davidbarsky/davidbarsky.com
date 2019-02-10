@@ -16,6 +16,8 @@ body {
 
   max-width: 600px;
   margin: auto;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 
 p {
@@ -25,7 +27,6 @@ p {
 
 h2 {
   font-weight: 700;
-  font-style: italic;
 }
 
 a {

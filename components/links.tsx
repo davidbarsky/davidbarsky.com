@@ -32,7 +32,7 @@ const Links = () => {
       case Site.LinkedIn:
         return (
           <Link href="https://linkedin.com/in/davidbarsky">
-            <a>GitHub</a>
+            <a>LinkedIn</a>
           </Link>
         );
     }

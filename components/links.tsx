@@ -13,7 +13,7 @@ const Links = () => {
     switch (name) {
       case Site.Twitter:
         return (
-          <Link href="https://twitter.com/thramp">
+          <Link href="https://twitter.com/endsofthreads">
             <a>Twitter</a>
           </Link>
         );

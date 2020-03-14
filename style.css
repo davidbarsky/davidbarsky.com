@@ -1,7 +1,6 @@
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+  html { font-family: 'Inter', sans-serif; }
 }
 
 html {
@@ -21,7 +20,6 @@ body {
 }
 
 p {
-  text-indent: 1.5rem;
   color: #a9acc5;
 }
 

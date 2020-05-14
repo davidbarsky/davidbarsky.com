@@ -1,5 +1,4 @@
 import * as React from "react";
-import Link from "next/link";
 
 const Links = () => {
   enum Site {
@@ -13,27 +12,19 @@ const Links = () => {
     switch (name) {
       case Site.Twitter:
         return (
-          <Link href="https://twitter.com/endsofthreads">
-            <a>Twitter</a>
-          </Link>
+          <a href="https://twitter.com/endsofthreads">Twitter</a>
         );
       case Site.Instagram:
         return (
-          <Link href="https://instagram.com/thramp">
-            <a>Instagram</a>
-          </Link>
+          <a href="https://instagram.com/thramp">Instagram</a>
         );
       case Site.GitHub:
         return (
-          <Link href="https://github.com/davidbarsky">
-            <a>GitHub</a>
-          </Link>
+          <a href="https://github.com/davidbarsky">GitHub</a>
         );
       case Site.LinkedIn:
         return (
-          <Link href="https://linkedin.com/in/davidbarsky">
-            <a>LinkedIn</a>
-          </Link>
+          <a href="https://linkedin.com/in/davidbarsky">LinkedIn</a>
         );
     }
   };

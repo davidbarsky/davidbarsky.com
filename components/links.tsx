@@ -1,38 +1,34 @@
 import * as React from "react";
 
-const Links = () => {
-  enum Site {
-    Twitter,
-    Instagram,
-    GitHub,
-    LinkedIn
-  }
+type Site = {
+  url: string;
+  display: string;
+};
 
-  const link = (name: Site) => {
-    switch (name) {
-      case Site.Twitter:
-        return (
-          <a href="https://twitter.com/endsofthreads">Twitter</a>
-        );
-      case Site.Instagram:
-        return (
-          <a href="https://instagram.com/thramp">Instagram</a>
-        );
-      case Site.GitHub:
-        return (
-          <a href="https://github.com/davidbarsky">GitHub</a>
-        );
-      case Site.LinkedIn:
-        return (
-          <a href="https://linkedin.com/in/davidbarsky">LinkedIn</a>
-        );
-    }
+function Link(site: Site) {
+  return (
+    <>
+      <a href={site.url}>{site.display}</a>
+    </>
+  );
+}
+
+const Links = () => {
+  let twitter = {
+    url: "https://twitter.com/endsofthreads",
+    display: "Twitter"
+  };
+  let instagram = { url: "https://instagram.com/thramp", display: "Instagram" };
+  let github = { url: "https://github.com/davidbarsky", display: "GitHub" };
+  let linkedin = {
+    url: "https://linkedin.com/in/davidbarsky",
+    display: "LinkedIn"
   };
 
   return (
     <p>
-      You can find me on elsewhere on {link(Site.Twitter)},{" "}
-      {link(Site.Instagram)}, {link(Site.GitHub)}, and {link(Site.LinkedIn)}.
+      You can find me on elsewhere on {Link(twitter)}, {Link(instagram)},{" "}
+      {Link(github)}, and {Link(linkedin)}.
     </p>
   );
 };

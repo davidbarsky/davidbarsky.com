@@ -1,6 +1,2 @@
-# Dependency directories
-node_modules
-
-# next
-out
-.next
+# Local Netlify folder
+.netlify

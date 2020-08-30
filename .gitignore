@@ -1,2 +1,7 @@
 # Local Netlify folder
 .netlify
+
+# output directory
+public
+
+.DS_Store

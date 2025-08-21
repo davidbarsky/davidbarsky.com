@@ -1,25 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+    <head>
+        <title>David Barsky</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-<head>
-    <title>David Barsky</title>
-    <meta charSet="utf-8" />
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <link rel="stylesheet" href="style.css" />
-</head>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap");
+            @supports (font-variation-settings: normal) {
+                html {
+                    font-family: "Inter", sans-serif;
+                }
+            }
 
-<body>
-    <h1>Hello!</h1>
-    <p>
-        I’m David Barsky, and I work at <s>Facebook</s> Meta. I also work on
-        the <a href="https://github.com/tokio-rs/tracing">Tracing</a> library.
-    </p>
-    <p>Before that, I worked at Amazon.</p>
-    <p>
-        You can find me on elsewhere on
-        <a href="https://twitter.com/endsofthreads">Twitter</a>,
-        <a href="https://instagram.com/endsofthreads">Instagram</a>,
-        <a href="https://github.com/davidbarsky">GitHub</a>, and
-        <a href="https://linkedin.com/in/davidbarsky">LinkedIn</a>.
-    </p>
-</body>
+            html {
+                color: rgb(253, 253, 253);
+                background-color: #0d0e10;
+            }
+
+            body {
+                font-weight: 300;
+                font-size: 1.3rem;
+                line-height: 1.4;
+
+                max-width: 600px;
+                margin: auto;
+                padding-left: 0.3rem;
+                padding-right: 0.3rem;
+            }
+
+            p {
+                color: #a9acc5;
+            }
+
+            h1 {
+                font-weight: 700;
+                padding-top: 7vh;
+            }
+
+            a {
+                color: #c799f5;
+            }
+
+            a:visited {
+                color: #c799f5;
+            }
+
+            ol {
+                margin: 0;
+                padding: 0rem;
+            }
+
+            ol::before {
+                content: "— ";
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Hello!</h1>
+        <p>
+            I’m David Barsky, and I cofounded at
+            <a href="https://ersc.io">East River Source Control</a>.
+        </p>
+        <p>
+            Before that, I worked on
+            <a href="https://rust-analyzer.github.io">rust-analyzer</a> at Meta.
+        </p>
+        <p>
+            You can find me on elsewhere on
+            <a href="https://bsky.app/profile/davidbarsky.com">Bluesky</a>,
+            <a href="https://www.threads.com/@endsofthreads">Threads</a>,
+            <a href="https://instagram.com/endsofthreads">Instagram</a>,
+            <a href="https://github.com/davidbarsky">GitHub</a>, and
+            <a href="https://linkedin.com/in/davidbarsky">LinkedIn</a>.
+        </p>
+    </body>
+</html>
